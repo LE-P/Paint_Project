@@ -94,14 +94,14 @@ public class Fenetre extends JFrame implements ActionListener{
         bouton23.addActionListener(this);
         bouton24.addActionListener(this);
 
-        JPanel paneau = new JPanel();
-        paneau.setLayout(new GridLayout(1,2));
-        paneau.add(pan1);
-        paneau.add(pan2);
+        JPanel panneau = new JPanel();
+        panneau.setLayout(new GridLayout(1,2));
+        panneau.add(pan1);
+        panneau.add(pan2);
 
         setJMenuBar(m);
         pan.add(new JTextArea(""),"Center");
-        pan.add(paneau, "South");
+        pan.add(panneau, "South");
         pan.add(d, "Center");
 
         this.setVisible(true);

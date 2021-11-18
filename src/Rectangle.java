@@ -65,6 +65,6 @@ public class Rectangle extends Figure{
     public int getPerimeter(){return (2*(width+height));}
     public int getArea(){return (width*height);}
 
-    public void setHeight(int H){return height=H;}
-    public void setWidth(int W){return width=W;}
+    //public void setHeight(int H){return height=H;}
+    //public void setWidth(int W){return width=W;}
 }

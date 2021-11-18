@@ -53,8 +53,8 @@ public class Dessin extends JPanel implements MouseListener, MouseMotionListener
         x = e.getX();
         y = e.getY();
         switch(nomFigure) {
-          //  case "Rectangle" : liste.add(new Rectangle(x, y, c));
-           //     break;
+            case "Rectangle" : liste.add(new Rectangle(x, y, c));
+                break;
             case "Ellipse" : liste.add(new Ellipse(x, y, c));
                 break;
             case "Carre" : liste.add(new Carre(x, y, c));
