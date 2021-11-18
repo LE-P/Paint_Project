@@ -24,4 +24,6 @@ public class Point {
 
         System.out.println(point1);
     }
+    @Override
+    public String toString() {return ("Point :(" +px+ "," +py+ ")");}
 }

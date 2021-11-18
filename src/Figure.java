@@ -1,24 +1,32 @@
-import java.awt.Graphics;
+import java.awt.* ;
 import java.awt.Color;
 
 public abstract class Figure {
-    private Point p;
-    private Color c;
-    protected int heightBB;
-    protected int widthBB;
+    protected Point origin;
+    protected Color c;
+   // protected int heightBB;
+   // protected int widthBB;
 
-    public Figure(Color c, Point a){
+    public Figure(Point p,Color c){
         this.c=c;
-        this.p=p;
+        this.origin=p;
+    }
+    public Figure(Point p0)  {
+        origin = p0;
     }
 
     public Color getColor(){return c;}
-    public Point getPoint(){return p;}
+    public Point getPoint(){return origin;}
 
 
     @Override
-    public String toString() {return "couleur: "+this.c+", origine: "+p;}
+    public String toString() {return "color: "+this.c+", origin: "+origin;}
+
+
+    public abstract void draw(Graphics g);
+    public abstract int getArea();
+    public abstract int getPerimeter();
 
     public abstract void setBoundingBox (int heightBB, int widthBB);
-    public abstract void draw (Graphics g);
+
 }
