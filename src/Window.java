@@ -2,15 +2,15 @@ import javax.swing.*;
 import java.awt.* ;
 import java.awt.event.*;
 
-public class Fenetre extends JFrame implements ActionListener{
+public class Window extends JFrame implements ActionListener{
     //static protected ArrayList<Figure> liste = new ArrayList<Figure>("Rectanlge", "Carré", "Cercle", "Ellipse");
     //static protected Color c = Color.black;
     //static protected String nom = new String();
 
-    static protected Dessin d = new Dessin();
+    static protected Drawing d = new Drawing();
 
 
-    public Fenetre(String titre, int x, int y){
+    public Window(String titre, int x, int y){
         super(titre);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocation(0,200);

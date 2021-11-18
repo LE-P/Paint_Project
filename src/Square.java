@@ -1,12 +1,12 @@
 import java.awt.Color;
 
-public class Carre extends Rectangle {
+public class Square extends Rectangle {
 
-    public Carre(int c){
+    public Square(int c){
         super(c, c);
     }
 
-    public Carre (int px, int py, Color c){
+    public Square (int px, int py, Color c){
 
         super(px, py, c);
     }

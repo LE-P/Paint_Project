@@ -1,12 +1,12 @@
 import java.awt.Color;
 
-public class Cercle extends Ellipse{
-    public Cercle(int c){
+public class Circle extends Ellipse{
+    public Circle(int c){
 
         super(c, c);
     }
 
-    public Cercle (int px, int py, Color c){
+    public Circle(int px, int py, Color c){
 
         super(px, py, c);
     }

@@ -5,14 +5,14 @@ import javax.swing.*;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public class Dessin extends JPanel implements MouseListener, MouseMotionListener{
+public class Drawing extends JPanel implements MouseListener, MouseMotionListener{
     protected ArrayList<Figure> liste;
     protected Color c;
     protected String nomFigure;
     protected int x;
     protected int y;
 
-    public Dessin(){
+    public Drawing(){
         super();
         this.c = Color.black;
         this.nomFigure = "Rectangle";
@@ -57,9 +57,9 @@ public class Dessin extends JPanel implements MouseListener, MouseMotionListener
                 break;
             case "Ellipse" : liste.add(new Ellipse(x, y, c));
                 break;
-            case "Carre" : liste.add(new Carre(x, y, c));
+            case "Carre" : liste.add(new Square(x, y, c));
                 break;
-            case "Cercle" : liste.add(new Cercle(x, y, c));
+            case "Cercle" : liste.add(new Circle(x, y, c));
                 break;
         }
     }
