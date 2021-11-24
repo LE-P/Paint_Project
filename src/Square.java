@@ -22,7 +22,7 @@ public class Square extends Rectangle {
     }
 
     public void setBoundingBox(int widthBB, int heightBB){
-        this.width = widthBB;
-        this.height = widthBB;
+        this.width = heightBB;
+        this.height = heightBB;
     }
 }

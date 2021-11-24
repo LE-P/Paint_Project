@@ -4,8 +4,7 @@ import java.awt.Color;
 public abstract class Figure {
     protected Point origin;
     protected Color c;
-   // protected int heightBB;
-   // protected int widthBB;
+
 
     public Figure(Point p,Color c){
         this.c=c;

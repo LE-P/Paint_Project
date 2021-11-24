@@ -16,10 +16,10 @@ public class Drawing extends JPanel implements MouseListener, MouseMotionListene
         super();
         this.c = Color.black;
         this.nomFigure = "Rectangle";
-        this.liste = new ArrayList<Figure>();
-        this.addMouseListener(this);
-        this.addMouseMotionListener(this);
-    }
+       this.liste = new ArrayList<Figure>();
+       this.addMouseListener(this);
+       this.addMouseMotionListener(this);
+     }
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);
@@ -53,13 +53,13 @@ public class Drawing extends JPanel implements MouseListener, MouseMotionListene
         x = e.getX();
         y = e.getY();
         switch(nomFigure) {
-            case "Rectangle" : liste.add(new Rectangle(x, y, c));
-                break;
             case "Ellipse" : liste.add(new Ellipse(x, y, c));
                 break;
             case "Carre" : liste.add(new Square(x, y, c));
                 break;
             case "Cercle" : liste.add(new Circle(x, y, c));
+                break;
+            case "Rectangle" : liste.add(new Rectangle(x, y, c));
                 break;
         }
     }
@@ -74,13 +74,13 @@ public class Drawing extends JPanel implements MouseListener, MouseMotionListene
         super.paintComponent(this.getGraphics());
     }
 
-    //public Color getCouleur(){
-    //return this.c;
-    //}
+    public Color getCouleur(){
+    return this.c;
+    }
 
-    //public String getNomFig(){
-    //return this.nomFigure;
-    //}
+    public String getNomFig(){
+    return this.nomFigure;
+    }
 
     public ArrayList<Figure> getListe(){
         return this.liste;

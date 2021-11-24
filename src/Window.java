@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.* ;
 import java.awt.event.*;
+import java.util.*;
+
 
 public class Window extends JFrame implements ActionListener{
     //static protected ArrayList<Figure> liste = new ArrayList<Figure>("Rectanlge", "Carré", "Cercle", "Ellipse");

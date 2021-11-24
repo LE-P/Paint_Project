@@ -12,8 +12,8 @@ public class Rectangle extends Figure{
     }
 
     @Override public void setBoundingBox(int heightBB, int widthBB) {
-        this.height=heightBB;
-        this.width=widthBB;
+        this.height=widthBB;
+        this.width=heightBB;
 
     }
 
@@ -23,11 +23,11 @@ public class Rectangle extends Figure{
     }
 
 
-    public Rectangle(int wi, int he) {
+     public Rectangle(int wi, int he) {
         super(new Point());
-        width = wi;
-        height = he;
-    }
+       width = wi;
+       height = he;
+     }
 
 
 

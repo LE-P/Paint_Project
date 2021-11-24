@@ -22,7 +22,7 @@ public class Circle extends Ellipse{
 
     @Override public void setBoundingBox(int heightBB, int widthBB) {
         this.paxe=heightBB;
-        this.gaxe=widthBB;
+        this.gaxe=heightBB;
     }
 
 }
