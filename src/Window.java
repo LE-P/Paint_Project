@@ -131,7 +131,7 @@ public class Window extends JFrame implements ActionListener{
                 break;
             case "Cercle" : d.setNomFig("Cercle");
                 break;
-            case "Rectange" : d.setNomFig("Rectangle");
+            case "Rectangle" : d.setNomFig("Rectangle");
                 break;
             case "Ellipse" : d.setNomFig("Ellipse");
                 break;
